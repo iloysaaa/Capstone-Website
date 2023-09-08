@@ -4,7 +4,9 @@ GIT GUIDE
 
 git clone https://github.com/iloysaaa/Capstone-Website.git - to copy the repo to your system
 
-git add . - add new changes in the website or codes
+git add . - add ALL new changes in the website or codes
+
+git add <file> - add new changes in the website or codes
 
 git push - to update the remote branch with local commits
 
