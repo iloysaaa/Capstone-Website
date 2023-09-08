@@ -13,3 +13,6 @@ git pull - to fetch the changes made
 git commit -m "<message>" - to create a commit in your Git repository with a commit message
 
 git status -  it provides you with information about the current state of your repository
+
+SAMPLE:
+![git-git](https://github.com/iloysaaa/Capstone-Website/assets/105960755/16bf8521-b944-4d4c-ad13-493d139dd163)
