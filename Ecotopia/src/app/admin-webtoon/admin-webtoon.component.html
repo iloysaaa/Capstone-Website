@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Publishing </title>
+    <link rel="stylesheet" href="../admin-webtoon/admin-webtoon.component.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Upload Chapters</div>
+    <div class="content">
+      <form action="#">
+        <div class="chap-details">
+          <div class="input-box">
+            <span class="details">Chapter Title</span>
+            <input type="text" placeholder="Enter title of chapter" required>
+          </div>
+
+          <div class="d-flex flex-row align-items-center mb-4">
+            <div class="form-outline flex-fill mb-0">
+            <label class="form-label" for="form3Example4cd">Thumbnail</label><br> 
+            <input type="file" name="image" class="box" required accept="image/jpg, image/jpeg, image/png">
+            </div>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Chapter Number</span>
+            <input type="text" placeholder="Enter chapter number" required>
+          </div>
+
+          <div class="d-flex flex-row align-items-center mb-4">
+            <div class="form-outline flex-fill mb-0">
+            <label class="form-label" for="form3Example4cd">Upload Files</label><br> 
+            <input type="file" name="image" class="box" required accept="image/jpg, image/jpeg, image/png">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="button">
+          <input type="submit" value="Publish Now">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

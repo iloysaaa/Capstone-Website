@@ -1,0 +1,148 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parent {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.parent a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Henry Sans Bold', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  white-space: nowrap;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+  gap: 50px;
+}
+
+.right-side {
+  margin-left: 3%;
+}
+
+.left-side {
+  margin-right: 3%;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 1rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.center-logo img {
+  width: 100px;
+}
+
+.active{
+    background-color: #FF96A9;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: black;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+
+}
+@media only screen and (max-width: 858px){
+
+  .checkbtn{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .center-logo img{
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    width: 70px;
+  }
+  .navbar {
+    top: 0;
+    width: 100%;
+  }
+
+  .left-side, .right-side{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+
+  }
+
+  .parent{
+    display: flex;
+    flex-direction: column;
+    display: none;
+    height: 100vh;
+    margin-top: 10%;
+  }
+
+  .dropdown-content{
+    display: hidden;
+  }
+
+  .left-side a, .right-side a{
+    padding-left: 5%;
+  }
+
+  .left-side a:hover, .right-side a:hover{
+    color: #FF96A9;
+  }
+
+  .parent{
+    /* position: fixed; */
+  }
+
+  #check:checked ~ .parent {
+    display: flex;
+    left: 0;
+  }
+
+}

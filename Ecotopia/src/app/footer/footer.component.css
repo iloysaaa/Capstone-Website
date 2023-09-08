@@ -1,0 +1,53 @@
+*{
+	font-family: 'Henry Sans Bold', sans-serif;
+
+}
+.follow-us{
+	width: 100%;
+	background-color: #EFF5FF;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.follow-us p{
+	font-size: 1rem;
+	padding-top: 20px;
+}
+
+.sitemap{
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	gap: 5px;
+	letter-spacing: 1px;
+}
+
+.sitemap a{
+	text-decoration: none;
+	color: #666666;
+	font-size: .7rem;
+	white-space: nowrap;
+}
+
+.sitemap a:hover{
+	color: #FF96A9;
+}
+
+.copyright{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #343A40;
+}
+
+.social{
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 20px;
+}
